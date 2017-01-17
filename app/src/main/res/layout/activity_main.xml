@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <!--RadioButton实现点击切换Fragment-->
+    <FrameLayout
+        android:id="@+id/fl_info_framlayout"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#4400ffff"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp">
+
+        <RadioGroup
+            android:id="@+id/rg_user_radiogroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <RadioButton
+                android:id="@+id/rb_userinfo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:button="@null"
+                android:text="我的"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="路线"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="心率"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="积分"
+                android:textSize="14sp"/>
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_alignParentRight="true"
+            android:id="@+id/rg_user_radiogroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <RadioButton
+                android:id="@+id/rb_userinfo5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:button="@null"
+                android:text="卡路里"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="周报"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="月报"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_userinfo8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="#00000000"
+                android:button="@null"
+                android:text="..."
+                android:textSize="14sp"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_send"
+        android:text="Send Msg To Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>
